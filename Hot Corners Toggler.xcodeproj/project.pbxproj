@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		235F1E732BAD9074003A8FE8 /* FileFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F1E722BAD9074003A8FE8 /* FileFunctions.swift */; };
+		235F1E752BAD919B003A8FE8 /* CornersFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F1E742BAD919B003A8FE8 /* CornersFunctions.swift */; };
+		235F1E772BAD91BE003A8FE8 /* CommandsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F1E762BAD91BE003A8FE8 /* CommandsFunctions.swift */; };
+		235F1E7C2BADC6F0003A8FE8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 235F1E7B2BADC6EF003A8FE8 /* icon.png */; };
+		235F1E7F2BADD1ED003A8FE8 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 235F1E7E2BADD1ED003A8FE8 /* LaunchAtLogin */; };
+		23D324362BAAF44500B5F2C0 /* Hot_Corners_TogglerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D324352BAAF44500B5F2C0 /* Hot_Corners_TogglerApp.swift */; };
+		23D3243C2BAAF44700B5F2C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D3243B2BAAF44700B5F2C0 /* Assets.xcassets */; };
+		23D3243F2BAAF44700B5F2C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D3243E2BAAF44700B5F2C0 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		235F1E722BAD9074003A8FE8 /* FileFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileFunctions.swift; sourceTree = "<group>"; };
+		235F1E742BAD919B003A8FE8 /* CornersFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornersFunctions.swift; sourceTree = "<group>"; };
+		235F1E762BAD91BE003A8FE8 /* CommandsFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsFunctions.swift; sourceTree = "<group>"; };
+		235F1E7B2BADC6EF003A8FE8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../Downloads/icon.png; sourceTree = "<group>"; };
+		23D324322BAAF44500B5F2C0 /* Hot Corners Toggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hot Corners Toggler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D324352BAAF44500B5F2C0 /* Hot_Corners_TogglerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hot_Corners_TogglerApp.swift; sourceTree = "<group>"; };
+		23D3243B2BAAF44700B5F2C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23D3243E2BAAF44700B5F2C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23D324402BAAF44700B5F2C0 /* Hot_Corners_Toggler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hot_Corners_Toggler.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23D3242F2BAAF44500B5F2C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235F1E7F2BADD1ED003A8FE8 /* LaunchAtLogin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		235F1E782BAD9299003A8FE8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				235F1E762BAD91BE003A8FE8 /* CommandsFunctions.swift */,
+				235F1E722BAD9074003A8FE8 /* FileFunctions.swift */,
+				235F1E742BAD919B003A8FE8 /* CornersFunctions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		23D324292BAAF44500B5F2C0 = {
+			isa = PBXGroup;
+			children = (
+				23D324342BAAF44500B5F2C0 /* Hot Corners Toggler */,
+				23D324332BAAF44500B5F2C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23D324332BAAF44500B5F2C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23D324322BAAF44500B5F2C0 /* Hot Corners Toggler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23D324342BAAF44500B5F2C0 /* Hot Corners Toggler */ = {
+			isa = PBXGroup;
+			children = (
+				235F1E782BAD9299003A8FE8 /* Utilities */,
+				23D324352BAAF44500B5F2C0 /* Hot_Corners_TogglerApp.swift */,
+				235F1E7B2BADC6EF003A8FE8 /* icon.png */,
+				23D3243B2BAAF44700B5F2C0 /* Assets.xcassets */,
+				23D324402BAAF44700B5F2C0 /* Hot_Corners_Toggler.entitlements */,
+				23D3243D2BAAF44700B5F2C0 /* Preview Content */,
+			);
+			path = "Hot Corners Toggler";
+			sourceTree = "<group>";
+		};
+		23D3243D2BAAF44700B5F2C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23D3243E2BAAF44700B5F2C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23D324312BAAF44500B5F2C0 /* Hot Corners Toggler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D324432BAAF44700B5F2C0 /* Build configuration list for PBXNativeTarget "Hot Corners Toggler" */;
+			buildPhases = (
+				23D3242E2BAAF44500B5F2C0 /* Sources */,
+				23D3242F2BAAF44500B5F2C0 /* Frameworks */,
+				23D324302BAAF44500B5F2C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hot Corners Toggler";
+			packageProductDependencies = (
+				235F1E7E2BADD1ED003A8FE8 /* LaunchAtLogin */,
+			);
+			productName = "Hot Corners Toggler";
+			productReference = 23D324322BAAF44500B5F2C0 /* Hot Corners Toggler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23D3242A2BAAF44500B5F2C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					23D324312BAAF44500B5F2C0 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 23D3242D2BAAF44500B5F2C0 /* Build configuration list for PBXProject "Hot Corners Toggler" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23D324292BAAF44500B5F2C0;
+			packageReferences = (
+				235F1E7D2BADD1ED003A8FE8 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
+			productRefGroup = 23D324332BAAF44500B5F2C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23D324312BAAF44500B5F2C0 /* Hot Corners Toggler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23D324302BAAF44500B5F2C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D3243F2BAAF44700B5F2C0 /* Preview Assets.xcassets in Resources */,
+				23D3243C2BAAF44700B5F2C0 /* Assets.xcassets in Resources */,
+				235F1E7C2BADC6F0003A8FE8 /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23D3242E2BAAF44500B5F2C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D324362BAAF44500B5F2C0 /* Hot_Corners_TogglerApp.swift in Sources */,
+				235F1E772BAD91BE003A8FE8 /* CommandsFunctions.swift in Sources */,
+				235F1E752BAD919B003A8FE8 /* CornersFunctions.swift in Sources */,
+				235F1E732BAD9074003A8FE8 /* FileFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23D324412BAAF44700B5F2C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23D324422BAAF44700B5F2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		23D324442BAAF44700B5F2C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hot Corners Toggler/Hot_Corners_Toggler.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Hot Corners Toggler/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hot-Corners-Toggler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		23D324452BAAF44700B5F2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hot Corners Toggler/Hot_Corners_Toggler.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Hot Corners Toggler/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hot-Corners-Toggler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23D3242D2BAAF44500B5F2C0 /* Build configuration list for PBXProject "Hot Corners Toggler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D324412BAAF44700B5F2C0 /* Debug */,
+				23D324422BAAF44700B5F2C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23D324432BAAF44700B5F2C0 /* Build configuration list for PBXNativeTarget "Hot Corners Toggler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D324442BAAF44700B5F2C0 /* Debug */,
+				23D324452BAAF44700B5F2C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		235F1E7D2BADD1ED003A8FE8 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		235F1E7E2BADD1ED003A8FE8 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 235F1E7D2BADD1ED003A8FE8 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 23D3242A2BAAF44500B5F2C0 /* Project object */;
+}
