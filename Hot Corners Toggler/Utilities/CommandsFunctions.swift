@@ -8,13 +8,16 @@
 import Foundation
 
 func runCommand(_ command: String) -> Void {
+    
     let task = Process()
     task.launchPath = "/bin/zsh"
     task.arguments = ["-c", command]
     task.launch()
+    
 }
 
 func runCommandReturnOutput(_ command: String) -> String {
+    
     let task = Process()
     let pipe = Pipe()
     
@@ -27,4 +30,5 @@ func runCommandReturnOutput(_ command: String) -> String {
     let data = pipe.fileHandleForReading.readDataToEndOfFile()
     let output = String(data: data, encoding: .utf8)!
     return output.trimmingCharacters(in: .whitespacesAndNewlines)
+    
 }

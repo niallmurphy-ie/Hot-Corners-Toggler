@@ -10,29 +10,19 @@ import LaunchAtLogin
 
 @main struct Hot_Corners_TogglerApp: App {
     
-    @State private var command: String = "a"
-    @State private var corners: String
     @State private var enabled: Bool
-    @State private var icon: String
     
     var body: some Scene {
         
-        MenuBarExtra(command, systemImage: icon) {
+        MenuBarExtra("Hot Corners Toggler", systemImage: enabled ? "camera.metering.center.weighted.average": "rectangle") {
             
             if enabled {
                 Button("Disable Hot Corners") {
-                    saveStringToFile(getCurrentHotCorners())
-                    disableHotCorners()
-                    saveEnabledToFile(false)
-                    enabled = false
-                    icon = "rectangle"
+                    disable()
                 }
             } else {
                 Button("Enable Hot Corners") {
-                    enableHotCorners(readStringFromFile()!)
-                    saveEnabledToFile(true)
-                    enabled = true
-                    icon = "camera.metering.center.weighted.average"
+                    enable()
                 }
             }
             
@@ -48,26 +38,22 @@ import LaunchAtLogin
         
     }
     
+    func enable() {
+        saveIsEnabledToFile(true)
+        enabled = true
+        shellSetHotCorners(readCornersFromFile() ?? "0 0 0 0")
+    }
+    
+    func disable() {
+        saveCornersToFile(shellGetHotCorners())
+        saveIsEnabledToFile(false)
+        enabled = false
+        shellSetHotCorners("0 0 0 0")
+    }
+    
     init() {
-        
         createDefaultFiles()
-        
-        if let corners = readStringFromFile() {
-            self.corners = corners
-        } else {
-            self.corners = "0 0 0 0"
-        }
-        
-        if let enabled = readEnabledFromFile() {
-            self.enabled = enabled
-            self.icon = enabled ? "camera.metering.center.weighted.average" : "rectangle"
-        } else {
-            self.enabled = true
-            self.icon = "rectangle"
-        }
-        
+        enabled = readEnabledFromFile() ?? true
     }
     
 }
-
-
