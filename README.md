@@ -13,7 +13,7 @@ I don't work with OSX and only built this because Hot Corners activating during 
 
 ## How to use
 
-1. Download the latest release from the releases tab.
+1. Download the latest zip file from the [Releases](https://github.com/niallmurphy-ie/Hot-Corners-Toggler/releases) page
 2. Unzip the file and drag the app to your Applications folder.
 3. Right click the app and click open.
 4. Click the icon in the menu bar and select to Disable or Enable hot corners.
