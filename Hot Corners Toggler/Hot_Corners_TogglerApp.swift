@@ -1,16 +1,11 @@
-//
-//  Hot_Corners_TogglerApp.swift
-//  Hot Corners Toggler
-//
-//  Created by Niall Murphy on 20/03/2024.
-//
-
 import SwiftUI
 import LaunchAtLogin
 
 @main struct Hot_Corners_TogglerApp: App {
     
     @State private var enabled: Bool
+    @State private var presetNames: [String]
+    @State private var currentPreset: Int
     
     var body: some Scene {
         
@@ -28,6 +23,32 @@ import LaunchAtLogin
             
             Divider()
             
+            TextField("Preset 1 Name", text: $presetNames[0])
+            Button("Save Preset 1") {
+                savePreset(1)
+            }
+            Button("Load Preset 1") {
+                loadPreset(1)
+            }
+            
+            TextField("Preset 2 Name", text: $presetNames[1])
+            Button("Save Preset 2") {
+                savePreset(2)
+            }
+            Button("Load Preset 2") {
+                loadPreset(2)
+            }
+            
+            TextField("Preset 3 Name", text: $presetNames[2])
+            Button("Save Preset 3") {
+                savePreset(3)
+            }
+            Button("Load Preset 3") {
+                loadPreset(3)
+            }
+            
+            Divider()
+            
             LaunchAtLogin.Toggle("Launch at login")
             
             Divider()
@@ -41,19 +62,31 @@ import LaunchAtLogin
     func enable() {
         saveIsEnabledToFile(true)
         enabled = true
-        shellSetHotCorners(readCornersFromFile() ?? "0 0 0 0")
+        shellSetHotCorners(readPresetFromFile(currentPreset) ?? "0 0 0 0")
     }
     
     func disable() {
-        saveCornersToFile(shellGetHotCorners())
+        savePreset(currentPreset)
         saveIsEnabledToFile(false)
         enabled = false
         shellSetHotCorners("0 0 0 0")
     }
     
+    func savePreset(_ preset: Int) {
+        savePresetToFile(preset, shellGetHotCorners())
+        savePresetNameToFile(preset, presetNames[preset - 1])
+    }
+    
+    func loadPreset(_ preset: Int) {
+        currentPreset = preset
+        shellSetHotCorners(readPresetFromFile(preset) ?? "0 0 0 0")
+    }
+    
     init() {
         createDefaultFiles()
         enabled = readEnabledFromFile() ?? true
+        presetNames = (1...3).map { readPresetNameFromFile($0) ?? "Preset \($0)" }
+        currentPreset = 1
     }
     
 }

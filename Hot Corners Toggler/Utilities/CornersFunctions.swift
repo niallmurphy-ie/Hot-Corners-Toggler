@@ -1,10 +1,3 @@
-//
-//  CornersFunctions.swift
-//  Hot Corners Toggler
-//
-//  Created by Niall Murphy on 22/03/2024.
-//
-
 func shellSetHotCorners(_ corners: String) -> Void {
     
     let cornersArray = corners.components(separatedBy: " ")
@@ -25,4 +18,8 @@ func shellGetHotCorners() -> String {
     let br = runCommandReturnOutput("defaults read com.apple.dock wvous-br-corner")
     return "\(tl) \(tr) \(bl) \(br)"
     
+}
+
+func applyPreset(_ preset: String) {
+    shellSetHotCorners(preset)
 }
